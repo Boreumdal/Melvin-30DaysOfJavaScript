@@ -1,0 +1,178 @@
+:root {
+    --theme: #44bd32;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html, body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100%;
+    width: 100%;
+    color: rgb(53, 53, 53);
+}
+
+input[type='button'], button {
+    cursor: pointer;
+}
+
+div.all {
+    width: 86%;
+    margin: 40px auto;
+    /* background-color: yellowgreen; */
+}
+button strong, button i {
+    color: rgb(53, 53, 53);
+}
+header {
+    text-align: center;
+    padding: 15px 0;
+}
+
+div.error {
+    width: 78%;
+    padding: 4px 0;
+    font-size: 13px;
+    margin: auto;
+}
+div.error p {
+    visibility: hidden;
+    color: rgb(240, 51, 51);
+}
+nav {
+    /* background-color: tomato; */
+    width: 84%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+nav input[type='text'], nav input[type='number'] {
+    font-size: 15px;
+    width: 180px;
+    height: 35px;
+    margin: 2px 1.6px;
+    padding: 19px 8px;
+    border-radius: 2px;
+    border: 1.2px solid var(--theme);
+}
+
+nav input[type='button'] {
+    font-size: 15px;
+    background-color: var(--theme);
+    color: white;
+    width: 180px;
+    height: 40.5px;
+    margin: 2px 1.6px;
+    padding: 0px 8px;
+    border-radius: 2px;
+    border: 0;
+}
+
+
+/* main */
+main {
+    width: 90%;
+    margin: 7px auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: white;
+}
+main div.row div.country, main div.row div.score, main div.row div.btn {
+    width: 224px;
+    margin: 2px;
+    padding: 8px 9px;
+    display: flex;
+    align-items: center;
+}
+main div.row div.name {
+    width: 224px;
+    margin: 2px;
+    padding: 7px 9px;
+    display: flex;
+    flex-direction: column;
+}
+
+main div.row div.name p#date {
+    font-size: 14px;
+}
+main div.row {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    justify-content: center;
+    background-color: var(--theme);
+    margin: 3px auto;
+    font-size: 17px;
+}
+main div.hide {
+    display: none;
+}
+main div.row div.btn button {
+    width: 37px;
+    height: 37px;
+    margin: 0 2px;
+    border: 0;
+    background-color: white;
+    border-radius: 50%;
+    transition: .1s linear;
+}
+main div.row div.btn button:hover {
+    background-color: rgb(232, 232, 232);
+}
+
+@media only screen and (max-width: 764px) {
+    header h1 {
+        font-size: 28px;
+    }
+    div.all {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    nav input {
+        width: 140px;
+    }
+    main {
+        width: 100%;
+        margin: 7px auto;
+    }
+    main div.row {
+        width: 100%;
+        font-size: 14px;
+        padding: 13px 0;
+    }
+    main div.row div.name p#date {
+        font-size: 11px;
+    }
+    main div.row div.country, main div.row div.score, main div.row div.btn {
+        width: 25%;
+        margin: 2px;
+        padding: 1px 4px;
+    }
+    main div.row div.name {
+        width: 25%;
+        margin: 2px;
+        padding: 1px 4px;
+    }
+    main div.row div.btn button {
+        width: 25px;
+        height: 25px;
+        margin: 0 2px;
+    }
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Activity</title>
+    </head>
+    <body>
+        <h1>Hello</h1>
+        <p id="p1">This is paragraph 1</p>
+        <p id="p2">This is paragraph 2</p>
+        <p id="p3">This is paragraph 3</p>
+        <p id="p4">This is paragraph 4</p>
+        
+        <!-- <script src="test.js"></script> -->
+        <script>
+            // let firstP = document.querySelector('p');
+            // let thirdP = document.querySelector('#p3');
+            // let nodeP = document.querySelectorAll('p')
+            // for (let par of nodeP){
+            //     console.log(par);
+            // }
+
+            // nodeP[0].classList.add('listed')
+
+            // nodeP[3].textContent = 'Im the fourth paragraph'
+            // nodeP[1].className = 'panguna'
+            // nodeP[1].id = 'una'
+
+            // nodeP[2].setAttribute('id', 'pangatlo')
+            // nodeP[2].setAttribute('class', 'pangatlog')
+
+            // console.log(firstP);
+            // console.log(thirdP);
+
+
+            let noded = document.querySelectorAll('p')
+
+            // noded[0].style.color = 'white'
+            // noded[0].style.backgroundColor = 'blue'
+            // noded[0].style.borderRadius = '4px 0'
+
+            noded.forEach((p, index) => {
+                if (index % 2 == 0){
+                    p.style.color = 'red'
+                }
+                else {
+                    p.style.color = 'green'
+                }
+                console.log(p)
+
+                p.setAttribute('id', 'custom')
+            })
+            
+        </script>
+        
+    </body>
+</html>

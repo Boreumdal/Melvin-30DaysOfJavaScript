@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Activity 1 - Document Object Model:30 Days Of JavaScript</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        font-family: Calibri, 'Trebuchet MS', sans-serif;
+      }
+
+	  /* header */
+      header {
+        text-align: center;
+      }
+      header h1 {
+        color: #20bf72;
+        font-size: 43px;
+        padding: 0;
+        margin: 0;
+      }
+	  header p {
+        padding: 0;
+        margin: 2px;
+      }
+
+	  /* input */
+	  div.inputs {
+		margin: 15px auto;
+		width: max-content;
+	  }
+	  div.inputs p {
+		padding: 0;
+		margin: 4px 2px;
+		font-size: 13px;
+		color: rgb(25, 25, 25);
+	  }
+	  div.inputs input {
+		padding: 10px 14px;
+		width: 40vw;
+		margin-right: 12px;
+		border: 2.2px solid #20bf72;
+		border-radius: 4px;
+	  }
+	  div.inputs button {
+		background-color: #20bf72;
+		border-radius: 4px;
+		color: white;
+		border: 0;
+		padding: 12px 14px;
+	  }
+	  div.inputs button:hover {
+		background-color: #34ce84;
+		cursor: pointer;
+	  }
+
+	  /* main container */
+	  div.result {
+		padding: 5px 0;
+		margin: auto;
+		max-width: 60%;
+		display: flex;
+		flex-flow: row wrap;
+	  }
+      .result div {
+        padding: 4px;
+        margin: 3px;
+        width: 86px;
+		height: 40px;
+        display: block;
+		border-radius: 4px;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		font-size: 40px;
+		text-align: center;
+      }
+      .result p {
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Number Generator</h1>
+      <p><b>30DaysOfJavaScript:DOM Day 3</b></p>
+      <p>Arellanonono</p>
+    </header>
+    <div class="main">
+      <div class="inputs">
+		<p id="error">Enter how many numbers will be generated</p>
+		<div>
+			<input type="text" id="nums" placeholder="Generate more numbers...">
+        	<button	button>Generate Numbers</button>
+		</div>
+      </div>
+      <div class="result"></div>
+    </div>
+    <script src="activity1.js"></script>
+  </body>
+</html>

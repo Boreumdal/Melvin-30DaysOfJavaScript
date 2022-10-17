@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+div.all {
+    max-width: 64%;
+    height: fit-content;
+    margin: 70px auto 0;
+}
+
+header h1 {
+    font-size: 51px;
+    letter-spacing: 11px;
+    font-weight: 600;
+    padding: 6px 0;
+}
+div#banner {
+    background-color: rgb(244, 244, 244);
+    padding: 21px 0 21px 24px;
+}
+div#banner p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    
+}
+
+div#banner p span.text {
+    margin-left: 10px;
+    opacity: 1;
+    animation: titles 1s;
+}
+
+main section.text {
+    margin: 15px 2px;
+}
+
+main section.text p {
+    line-height: 1.5em;
+}
+
+/* cards */
+main section.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 8px 0;
+}
+
+main section.card div.cardpupil {
+    background-color: rgb(244, 244, 244);
+    margin: 10px 2px;
+    width: 200px;
+    height: 160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .2s;
+}
+main section.card div.cardpupil:hover {
+    scale: 1.1;
+}
+main section.card div p {
+    font-size: 21px;
+}
+
+/* asdsa */
+main section.message {
+    padding: 14px 0;
+}
+main section.message p span {
+    font-size: 28px;
+    font-weight: 900;
+    opacity: 1;
+    animation: teaches 1s;
+}
+
+@keyframes teaches {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes titles {
+    0% { opacity: 0; padding-left: 30px;}
+    100% { opacity: 1; padding-left: 0px;}
+}
+

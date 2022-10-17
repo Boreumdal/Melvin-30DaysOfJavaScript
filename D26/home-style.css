@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    background-image: url('head-bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+/* head 1 */
+header div.head1 {
+    text-align: center;
+    padding: 10px 0;
+}
+header div.head1 h1 {
+    font-size: 46px;
+    letter-spacing: 11px;
+}
+header div.head1 p.ncountries {
+    font-weight: 900;
+    font-size: 17px;
+    padding: 10px;
+}
+header div.head1 p.nsearch {
+    letter-spacing: 1.4px;
+}
+header div.head1 span.nsearch span.letter {
+    font-style: italic;
+    font-weight: 900;
+    color: rgb(9, 232, 9);
+}
+header div.head1 span.nsearch span.lenLetter {
+    font-style: italic;
+    font-weight: 900;
+    color: rgb(9, 232, 9);
+}
+/* head 2 */
+header div.head2 {
+    padding: 10px;
+}
+header div.head2 input[type='button'] {
+    background-color: rgb(41, 176, 45);
+    color: white;
+    height: 44px;
+    padding: 0 11px;
+    border: 0;
+    font-size: 12px;
+    border-radius: 4px;
+    transition: linear .1s;
+    cursor: pointer;
+    margin: 1px;
+}
+header div.head2 input[type='button']:hover {
+    background-color: rgb(39, 161, 43);
+}
+/* head 3 */
+header div.head3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header div.head3 input#search {
+    padding: 10px 15px;
+    text-align: center;
+    width: 408px;
+    border: 0;
+    border-radius: 30px;
+    font-size: 14px;
+}
+header div.head3 button#searchbtn {
+    width: 37px;
+    height: 37px;
+    background-color: transparent;
+    margin-left: 5px;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+}
+header div.head3 button#searchbtn i {
+    font-size: 27px;
+    font-weight: 900;
+    color: white;
+    transition: linear .1s;
+}
+
+/* main */
+main {
+    max-width: 74%;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 40px auto;
+    padding: 10px;
+}
+main div.country {
+    width: 155px;
+    height: 165px;
+    background-image: url('bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 14px;
+    border-radius: 3px;
+}
+
+main div.country p {
+    font-size: 20px;
+    font-weight: 900;
+    padding: 14px;
+    color: white;
+    text-align: center;
+}
+
+@media only screen and (max-width: 764px) {
+    header div.head3 input#search {
+        width: 268px;
+    }
+    main {
+        max-width: 100%;
+    }
+    main div.country {
+        width: 140px;
+        height: 155px;
+        margin: 23px;
+    }
+    main div.country p {
+        font-size: 16px;
+    }
+}

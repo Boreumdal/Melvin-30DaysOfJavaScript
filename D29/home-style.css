@@ -1,0 +1,33 @@
+html, body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100%;
+}
+
+main {
+    width: 66%;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+p {
+    padding: 30px 23px;
+    font-size: 50px;
+    letter-spacing: 12.6px;
+}
+span {
+    animation: fader 1s;
+}
+
+@media only screen and (max-width: 764px) {
+    main {
+        width: 90%;
+    }
+    p {
+        font-size: 40px;
+    }
+}
+
+@keyframes fader {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

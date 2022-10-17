@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Activity 2 - Document Object Model:30 Days Of JavaScript</title>
+        <link rel="stylesheet" href="src/css/home.css">
+    </head>
+    <body>
+        <main>
+            <h1>Calculate a weight of an object on a planet</h1>
+            <div class="main">
+                <div class="panel">
+
+                    <div class="heading">
+
+                        <div class="top">
+                            <p>Enter weight:</p>
+                            <input type="text" id="kilo" value="2" placeholder="Weight in kilogram">
+                            <p>Select planet:</p>
+                            <select id="planetoptions">
+                                
+                                <option value="earth">Earth</option>
+                                <option value="mercury">Mercury</option>
+                                <option value="venus">Venus</option>
+                                <option value="mars">Mars</option>
+                                <option value="jupiter">Jupiter</option>
+                                <option value="saturn">Saturn</option>
+                                <option value="uranus">Uranus</option>
+                                <option value="neptune">Neptune</option>
+                                <option value="sun">Sun</option>
+                            </select>
+                        </div>
+
+                        <div class="bottom">
+                            <input type="button" id="calcBtn" value="Calculate">
+                        </div>
+
+                    </div>
+
+                    <div class="result">
+                        <p id="resultParagraph">Here comes the storm rushin' in</p>
+                        <p id="result"><span>hidden</span></p>
+                    </div>
+                </div>
+                
+                <div class="planet">
+                    <div class="planetimg"></div>
+                </div>
+
+            </div>
+        </main>
+        <script src="src/js/home.js"></script>
+    </body>
+</html>

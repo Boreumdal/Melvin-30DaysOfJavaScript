@@ -1,0 +1,132 @@
+:root {
+    --theme : #ff3f34;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: Calibri, sans-serif;
+    color: rgb(48, 48, 48);
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    margin: 25px;
+}
+header h1 {
+    color: var(--theme);
+    letter-spacing: 1.5px;
+    font-size: 40px;
+}
+header p {
+    margin-top: 5px;
+}
+
+/* NAV */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 21px 0 14px;
+    width: 100%;
+    box-shadow: 3px 0 5px rgba(87, 87, 87, 0.218);
+}
+
+nav input[type='button'] {
+    background-color: var(--theme);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 3px;
+    width: 122px;
+    height: 33px;
+    margin: 3px;
+    transition: .4s;
+}
+nav input[type='button']:hover {
+    cursor: pointer;
+    background-color: #db332a;
+}
+
+nav div {
+    margin-bottom: 8px;
+}
+
+/* MAIN */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 34px;
+    width: 100%;
+}
+
+div.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 66%;
+    margin: 3px 0;
+    font-weight: 400;
+}
+/* language */
+div.title { 
+    width: 11%;
+    margin-right: 30px;
+}
+/* graph */
+div.progress {
+    width: 70%;
+    margin: 0;
+}
+/* count */
+div.countcontainer {
+    width: 15%;
+    margin: 0 0px 0 33px;
+}
+
+progress {
+    appearance: none;
+    height: 36px;
+    width: 100%;
+}
+progress::-webkit-progress-bar {
+    background-color: transparent;
+}
+progress::-webkit-progress-value {
+    background-color: var(--theme);
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        width: 100%;
+    }
+    main {
+        padding: 0 10px;
+    }
+    div.row {
+        width: 99%;
+        
+    }
+    div.title { 
+        width: 29%;
+        margin-right: 10px;
+    }
+    div.progress {
+        width: 41%;
+    }
+    div.countcontainer {
+        margin-left: 20px;
+        width: 30%;
+    }
+}

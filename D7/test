@@ -1,0 +1,483 @@
+
+/*
+function urName(fname, lname){
+    let sum = fname + lname
+    return sum
+}
+console.log(urName(1, 1));
+
+
+function perimeterofRectangle(l, w){
+    return 2 * (l + w)
+}
+console.log(perimeterofRectangle(4,9));
+
+
+
+// Volume of rectangular prism
+let volumeOfRectPrism = (l, w, h) => {
+    let volume = l * w * h
+    return volume
+}
+console.log(volumeOfRectPrism(5, 6, 7))
+
+
+// Area of cirlce
+let areaOfCircle = r => {
+    area = Math.PI * r * r
+    return area
+}
+console.log(areaOfCircle(7));
+
+
+let circumOfCircle = r => {
+    let circum = 2 * (Math.PI * r)
+    return circum
+}
+console.log(circumOfCircle(7));
+
+let density = (m, v) => {
+    return m / v
+}
+console.log(density(5,3));
+
+let speed = (d, t) => {
+    let s = d / t
+    return s
+}
+console.log(speed(5, 6));
+
+let weight = m => {
+    let w = m * 9.8
+    return w
+}
+console.log(weight(48));
+
+let convertCelsiusToFahrenheit = c => {
+    let f = (c * 9/5) + 32
+    return f
+}
+console.log(convertCelsiusToFahrenheit(37));
+
+
+let massIndex = (w, h) => {
+    let bmi = w / (h * h)
+    if (bmi < 18.5){
+        return 'Underweight'
+    }
+    else if (bmi >= 18.5 && bmi <= 249){
+        return 'Normal weight'
+    }
+    else if (bmi >= 25 && bmi <= 29.9){
+        return 'Overweigth'
+    }
+    else if (bmi >= 30){
+        return 'Obese'
+    }
+    else {
+        return 'Enter data'
+    }
+}
+
+console.log(massIndex(54, 1.72));
+
+
+
+
+
+F
+O
+I
+L
+
+function solveQuadEquation(a, b, c){
+    let a1 = a / 2
+    let b1 = 
+    let d1 = c / 2
+}
+
+if (i % form1 == 0){
+            form2 = form2 + i
+        }
+
+
+
+let a = []
+
+let inArray = arr => {
+    for (const yo of arr){
+        console.log(yo);
+    }
+}
+
+inArray([4,5,5,5,5])
+
+
+let showDateTime = () => {
+    let theDate = new Date()
+    let mm = theDate.getMonth() + 1
+    let dd = theDate.getDay()
+    let yy = theDate.getFullYear()
+    let min = theDate.getMinutes()
+    let hr = theDate.getHours()
+
+    console.log(`${mm}/${dd}/${yy} ${hr}:${min}`);
+}
+
+showDateTime()
+
+
+let swapper = (a,b) => {
+    console.log(`You entered: a = ${a} and ${b}`);
+    x = a
+    y = b
+    a = y
+    b = x
+    console.log(`You entered: a = ${a} and ${b}`);
+}
+
+swapper(2,3)
+
+let reverseArr = arrAy => {
+    let arr = []
+    for (let i = arrAy.length; i > 0; i--){
+        arr.push(arrAy[i-1])
+    }
+    return arr
+}
+
+console.log(reverseArr(['a', 'b', 'c', 'd']));
+
+let capitalizeArray = arrString => {
+    let capital1 = arrString.toString()
+    let capital2 = capital1.toUpperCase()
+    let capitalizedArray = capital2.split(',')
+
+    return capitalizedArray
+}
+
+console.log(capitalizeArray(['aasfasfdasf', 'basfdfasfasf', 'casdasfasf', 'dsadfdwsf']))
+
+let customItems = (...items) => {
+    
+    for (let i = 0; i < items.length; i++){
+        item.push(items[i])
+    }
+    return item
+}
+console.log(customItems('red', 'bluie', 'whire', 'yellow'));
+
+
+let item = ['red', 'bluie', 'whire', 'yellow']
+
+let addItems = add => {
+    let a = item.indexOf(add)
+    item.splice(a, 1)
+}
+addItems('bluie')
+
+console.log(item);
+
+let odd = 0;
+let even = 0;
+
+let sumOfNumbers = (...args) => {
+    for(const rara of args){
+        rara % 2 == 0 ? odd += rara : even += rara
+    }
+    return odd, even
+}
+
+sumOfNumbers(1,2,3,4,5,6,7,8,9,10)
+
+console.log(odd)
+console.log(even)
+
+let odd = 0
+let even = 0
+let evensAndOdds = max => {
+    let a = []
+    let b = []
+    for(let i = 0; i <= max; i++){
+        i % 2 == 0 ? a.push(i) : b.push(i);
+    }
+    odd += a.length
+    even += b.length
+}
+evensAndOdds(100);
+
+console.log(odd);
+console.log(even);
+
+let sum = 0;
+let summer = (...nums) => {
+    for (const h of nums){
+        sum += h
+    }
+    return sum
+}
+
+console.log(summer(1,2,3,4,5));
+
+let randomUserIp = () => {
+    let a, b, c, d
+    a = Math.floor(Math.random() * 255)
+    b = Math.floor(Math.random() * 255)
+    c = Math.floor(Math.random() * 255)
+    d = Math.floor(Math.random() * 255)
+    let proto = `${a}.${b}.${c}.${d}`
+    return proto
+}
+console.log(randomUserIp());
+
+
+let randomHexaNumberGenerator = () => {
+    let hex = '#'
+    let giv = 'abcdef0123456789'
+    for (i=1;i<=6;i++){
+        hex += giv[Math.floor(Math.random() * 15)]
+    }
+    return hex
+}
+
+console.log(randomHexaNumberGenerator());
+
+let userIdGenerator = () => {
+    let uid = ''
+    let giv = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789'
+    for (let i = 1; i <= 7; i++){
+        uid += giv[Math.floor(Math.random() * 61)]
+    }
+    return uid
+}
+
+console.log(userIdGenerator());
+
+let userIdGenerator = () => {
+    let nc = prompt('Number of characters:', '')
+    let ni = prompt('Number of ids to be generated:', '')
+    let uid = ''
+    let giv = 'AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz0123456789'
+    for (let a = 1; a <= ni; a++){
+        for (let i = 1; i <= nc; i++){
+            uid += giv[Math.floor(Math.random() * 61)]
+        }
+        uid += '\n'
+    }
+    return uid
+}
+
+console.log(userIdGenerator());
+
+let rgbColorGenerator = () => {
+    let r = Math.floor(Math.random() * 255)
+    let g = Math.floor(Math.random() * 255)
+    let b = Math.floor(Math.random() * 255)
+    let rgb = `rgb(${r},${g},${b})`
+    return rgb
+}
+
+console.log(rgbColorGenerator());
+
+
+let arrayOfHexaColors = () => {
+    let numOfHex = prompt('Number of hex:', '')
+    let giv = 'abcdef0123456789'
+    let arr = []
+    for (let a = 1; a <= numOfHex; a++){
+        let hex = '#'
+        for (let i = 1; i<=6; i++){
+            hex += giv[Math.floor(Math.random() * 15)]
+        }
+        arr.push(hex)
+    }
+    return arr
+}
+console.log(arrayOfHexaColors());
+
+let arrayOfRgbColors = () => {
+    let numOfRgb = prompt('Number of rgb:', '')
+    let arr = []
+    for (let a = 1; a <= numOfRgb; a++){
+        let r = Math.floor(Math.random() * 255)
+        let g = Math.floor(Math.random() * 255)
+        let b = Math.floor(Math.random() * 255)
+        let rgb = `rgb(${r},${g},${b})`
+        arr.push(rgb)
+    }
+    return arr
+}
+console.log(arrayOfRgbColors());
+
+let generateColors = (typ, counts) => {
+    if (typ == 'rgb'){
+        let result = []
+        for (let i = 1; i <= counts; i++){
+            let r = Math.floor(Math.random() * 255)
+            let g = Math.floor(Math.random() * 255)
+            let b = Math.floor(Math.random() * 255)
+            let rgb = `rgb(${r},${g},${b})`
+            result.push(rgb)
+        }
+        return result
+    }
+    else if (typ == 'hexa'){
+        let result = []
+        for (let i = 1; i <= counts; i++){
+            let hex = '#'
+            for (let o = 1; o <= 6; o++){
+                let chars = 'abcdef1234567890'
+                hex += chars[Math.floor(Math.random() * (chars.length-1))]
+            }
+            result.push(hex)
+        }
+        return result
+    }
+}
+console.log(generateColors('rgb', 3))
+console.log(generateColors('hexa', 3))
+
+
+let shuffleArray = (samp) => {
+    let shuffled = []
+
+    for (let i = 0; i < samp.length; i++){
+        let selectorRandom = Math.floor(Math.random() * samp.length)
+        shuffled.push(samp[selectorRandom]);
+    }    
+    return shuffled
+}
+console.log(shuffleArray(['a','b','c','d','e','a','b','c','d','e','a','b','c','d','e']));
+
+
+let factorial = (num) => {
+    let mult = 1
+    for (let i = num; i > 0; i--){
+        mult *= i
+    }
+    return mult
+}
+console.log(factorial(4));
+
+
+let isEmpty = (check) => {
+    if (check == '' || check == null || check === undefined){
+        console.log('Empty');
+    }
+    else {
+        console.log('Not empty');
+    }
+}
+
+let sum = (...nums) => {
+    summary = 0
+    for (let i = 0; i < nums.length; i++){
+        summary += nums[i]
+    }
+    return summary
+}
+console.log(sum(1,2,3,4,5,5));
+
+
+let sumOfArrayItems = (arr) => {
+    summary = 0
+    for (const suum of arr){
+        if (typeof suum === 'number'){
+            summary += suum
+        }
+        else {
+            return 'not'
+        }
+    }
+    return summary
+}
+console.log(sumOfArrayItems([1,2,3,'4',5,5]))
+
+let average = (arr) => {
+    summary = 0
+    ave = arr.length
+    for (const suum of arr){
+        if (typeof suum === 'number'){
+            summary += suum
+        }
+        else {
+            return 'not'
+        }
+    }
+    return summary / arr.length
+}
+console.log(average([1,2,3,4,5,5]));
+
+let modifyArray = (arr) => {
+    let modifiedArray = []
+    if (arr.length < 5){
+        return 'not found'
+    }
+    else {
+        for (let i = 0; i < arr.length; i++){
+            if (i == 4){
+                let upperr = arr[i]
+                modifiedArray.push(upperr.toUpperCase())
+            }
+            else {
+                modifiedArray.push(arr[i])
+            }
+        }
+    }
+    return modifiedArray
+}
+console.log(modifyArray(['Avocado', 'Tomato', 'Potato','Mango', 'Lemon','Carrot']))
+
+let isPrime = (num) => {
+    if (num < 1){
+        return 'not prime'
+    }
+    else if (num > 1){
+        for (let i = 2; i < num; i++){
+            if (num % i == 0){
+                return 'not'
+            }
+        }
+    }
+    else {
+        return 'not prime'
+    }
+    return 'primeeee'
+}   
+
+console.log(isPrime(39));
+
+
+
+// unique
+
+
+// isValidVariable
+
+let uniqueArray = () => {
+    let uni = []
+
+    while (uni.length < 7){
+        let gen = Math.floor(Math.random() * 7) + 1
+        if (uni.indexOf(gen) === -1){
+            uni.push(gen)
+        }
+    }
+    return uni
+}
+console.log(uniqueArray());
+
+
+reverseCountries = (arr) => {
+    return arr.reverse()
+}
+
+console.log(reverseCountries(['phil', 'ind', 'kor', 'jap']));
+*/
+
+
+
+
+
+
+

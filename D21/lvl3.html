@@ -1,0 +1,101 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaScript for Everyone:DOM</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Asabeneh Yetayeh challenges in 2020</h1>
+      <h2>30DaysOfJavaScript Challenge</h2>
+      <p></p>
+      <ul>
+          <li>30DaysOfPython Challenge Done</li>
+          <li>30DaysOfJavaScript Challenge Ongoing</li>
+          <li>30DaysOfReact Challenge Coming</li>
+          <li>30DaysOfFullStack Challenge Coming</li>
+          <li>30DaysOfDataAnalysis Challenge Coming</li>
+          <li>30DaysOfReactNative Challenge Coming</li>
+          <li>30DaysOfMachineLearning Challenge Coming</li>
+      </ul>
+    </div>
+
+    <script>
+      // setting body font to calibri bz calibri is d best
+      document.querySelector('body').setAttribute('style', 'margin: 0; font-family: Calibri, sans-serif;');
+      
+      // lagay sa var yung mga tags
+      let h1 = document.querySelector('h1')
+      let h2 = document.querySelector('h2')
+      let ul = document.querySelector('ul')
+      let div = document.querySelector('div')
+      let li =  document.querySelectorAll('li')
+      
+
+      // centralization
+      h1.style.textAlign = 'center'
+      h2.style.textAlign = 'center'
+      ul.setAttribute('style', 'list-style-type: none; padding: 0; margin: auto; width: 45%;')
+      
+
+      // target 2020
+      let h1Content = h1.textContent // usable para sa walang innerHTML
+      h1.innerHTML = 'Asabeneh Yetayeh challenges in <span>2020</span>'
+      let span = document.querySelector('span')
+
+      span.style.fontSize = '67px'
+      let colorRandomizer = () => {
+        let first = Math.floor(Math.random() * 255)
+        let second = Math.floor(Math.random() * 255)
+        let third = Math.floor(Math.random() * 255)
+        let randomColor = `rgb(${first}, ${second}, ${third})`
+        span.style.transition = '.5s'
+        span.style.color = randomColor
+      }
+      setInterval(colorRandomizer, 1000)
+
+      // target h2
+      h2.style.fontWeight = '100'
+      h2.style.textDecoration = 'underline'
+      
+      // date
+      // h2.innerHTML += '<p></p>' // notworking
+      let p = document.querySelector('p')
+      // setting data para malagay sa p
+      let petsa = new Date()
+      let arrayofMonths = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+      let dateToday = `${arrayofMonths[petsa.getMonth()]} ${petsa.getDate()}, ${petsa.getFullYear()} ${petsa.getHours()}:${petsa.getMinutes()}`
+      p.innerText = dateToday
+      p.style.fontSize = '15px'
+      p.style.textDecoration = 'none'
+      p.style.width = 'fit-content'
+      p.style.padding = '5px 10px'
+      p.style.margin = 'auto auto 10px'
+      let colorRandomizerr = () => {
+        let first = Math.floor(Math.random() * 255)
+        let second = Math.floor(Math.random() * 255)
+        let third = Math.floor(Math.random() * 255)
+        let randomColor = `rgb(${first}, ${second}, ${third})`
+        p.style.transition = '.5s'
+        p.style.backgroundColor = randomColor
+      }
+      setInterval(colorRandomizerr, 1000)
+
+      // setting colors sa li
+      li.forEach((data, index) => {
+        data.style.padding = '15px 24px'
+        data.style.margin = '1px 0'
+        data.style.overflowX = 'hidden'
+        if (index == 0){
+          data.style.backgroundColor = '#20bf6b'
+        }
+        else if (index == 1){
+          data.style.backgroundColor = '#f7b731'
+        }
+        else {
+          data.style.backgroundColor = '#eb3b5a'
+        }
+      })
+    </script>
+  </body>
+</html>

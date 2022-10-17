@@ -1,0 +1,143 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Calibri, sans-serif;
+    background-image: url('../img/bg.jpg');
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    /* border: 1px solid yellow; */
+    width: fit-content;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}
+.main {
+    margin: 0 0 0 1px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* top */
+
+div.heading p, div.result p {
+    padding: 0;
+    margin: 0;
+}
+
+div.heading {
+    background-color: rgba(255, 255, 255, 0.675);
+    color: black;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+div.heading p {
+    padding: 10px 0;
+}
+
+/* inputs */
+
+div.top, div.bottom {
+    padding: 0 13px;
+}
+
+input#kilo {
+    padding: 10px 13px;
+    border: 0;
+    border-radius: 4px;
+    background-color: white;
+    width: 60%;
+}
+
+select {
+    padding: 10px 13px;
+    border: 0;
+    border-radius: 4px;
+    background-color: white;
+}
+/* bottom */
+input#calcBtn {
+    color: rgb(42, 42, 42);
+    padding: 10px 13px;
+    border: 0;
+    border-radius: 4px;
+    /* background-color: rgb(54, 90, 158); */
+}
+
+input#calcBtn:hover {
+    cursor: pointer;
+    /* background-color: rgb(67, 115, 206); */
+}
+
+div.bottom {
+    margin-top: 15px;
+}
+
+/* result */
+div.result {
+    background-color: rgba(255, 255, 255, 0.675);
+    color: black;
+    /* border: 1px solid rgb(244, 31, 198); */
+    padding: 22px 16px;
+    margin-top: 10px;
+}
+div.result p#resultParagraph span {
+    font-weight: 900;
+}
+div.result p#result {
+    margin-top: 34px;
+    margin: 24px auto 0;
+    width: fit-content;
+    font-size: 35px;
+    font-weight: 900;
+}
+div.result p#result span {
+    visibility: hidden;
+}
+
+div.panel {
+    /* border: 1px solid lightcoral; */
+    min-width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.planet {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid lightblue; */
+}
+
+div.planetimg {
+    /* border: 1px solid rgb(41, 211, 11); */
+    background-image: url('../img/1.png');
+    /* earth default */
+    overflow: hidden;
+    background-position: -1974px -125px;
+    background-repeat: no-repeat;
+    background-origin: 0;
+    width: 360px;
+    height: 360px;
+    transition: linear 1s;
+}
+
+
+

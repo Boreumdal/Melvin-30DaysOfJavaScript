@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 30 Yezzir</title>
+    <link rel="stylesheet" href="home-style.css">
+    <script src="https://kit.fontawesome.com/74f9e5c124.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="top">
+        <h1>World Countries Data</h1>
+        <p id="countriesCount"></p>
+        <p id="return">A</p>
+    </header>
+    <main>
+        <section id="visual" class="visual">
+            <div class="search-container">
+                <div class="searchbar">
+                    <input type="text" id="search" placeholder="Search country by name, city or population">
+        
+                </div>
+                <div class="category">
+                    <p>Sort by: </p>
+                    <button id="name"><span>Name</span></button>
+                    <button id="capital"><span>Capital</span></button>
+                    <button id="population"><span>Population</span></button>
+                    <a href="#graphical"><i class="fa-solid fa-chart-gantt"></i></a>
+                </div>
+            </div>
+            <div class="main-container">
+            </div>
+        </section>
+
+        <section class="graphical" id="graphical">
+            <div class="upper">
+                <div class="title">
+                    <p class="worldpopulation">World Population</p>
+                </div>
+                <div class="population-btn">
+                    <input type="button" id="byPopulation" value="Population">
+                    <input type="button" id="byLanguage" value="Language">
+                    <a href="#top"><i class="fa-solid fa-arrow-up"></i></a>
+                </div>
+            </div>
+            <div class="lower">
+                <!-- <div class="row">
+                    <div class="row-content-data">
+                        <p>Hi</p>
+                    </div>
+                    <div class="row-content-prog">
+                        <progress max="100" value="70"></progress>
+                    </div>
+                    <div class="row-content-coun">
+                        <p>23</p>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </main>
+    <!-- <script src="countries.js"></script> -->
+    <script src="home-script.js"></script>
+</body>
+</html>
